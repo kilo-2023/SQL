@@ -1,0 +1,28 @@
+--Create an anime store database
+
+CREATE TABLE anime_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, location TEXT);
+
+INSERT INTO anime_store VALUES (1, "Polos", 20, 45, "Minneapolis");
+INSERT INTO anime_store VALUES (2, "Dolls", 100, 15, "Houston");
+INSERT INTO anime_store VALUES (3, "Jackets", 40, 60, "Minneapolis");
+INSERT INTO anime_store VALUES (4, "Pants", 20, 60, "Houston");
+INSERT INTO anime_store VALUES (5, "Keychains", 150, 5, "Minneapolis");
+INSERT INTO anime_store VALUES (6, "Shoes", 75, 120, "Houston");
+INSERT INTO anime_store VALUES (7, "Hats", 200, 15, "Minneapolis");
+INSERT INTO anime_store VALUES (8, "Necklaces", 300, 18, "Minneapolis"); 
+INSERT INTO anime_store VALUES (9, "Socks", 125, 10, "Houston");
+INSERT INTO anime_store VALUES (10, "Gloves", 50, 25, "Minneapolis"); 
+INSERT INTO anime_store VALUES (11, "Pins", 500, 2, "Minneapolis"); 
+INSERT INTO anime_store VALUES (12, "Pens", 345, 8, "Houston"); 
+INSERT INTO anime_store VALUES (13, "Figurines", 50, 125, "Houston"); 
+INSERT INTO anime_store VALUES (14, "Stickers", 1000, 2, "Minneapolis"); 
+INSERT INTO anime_store VALUES (15, "Posters", 250, 25, "Minneapolis");
+
+--display everything from the store 
+SELECT * FROM anime_store;
+
+--What are the most expensive items? This code dislays the names of all items AND their price from the anime store ordered by price in descending order.
+SELECT name, quantity, price from anime_store ORDER BY price desc;
+
+--What is the total number of inventory being sold at this store?
+SELECT SUM (quantity) FROM anime_store;

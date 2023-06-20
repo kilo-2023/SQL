@@ -18,7 +18,7 @@ INSERT INTO anime_store VALUES (13, "Figurines", 50, 125, "Houston");
 INSERT INTO anime_store VALUES (14, "Stickers", 1000, 2, "Minneapolis"); 
 INSERT INTO anime_store VALUES (15, "Posters", 250, 25, "Minneapolis");
 
---display everything from the store 
+--display the quantity of everything besing sold at the store 
 SELECT * FROM anime_store;
 
 --What are the most expensive items? This code dislays the names of all items AND their price from the anime store ordered by price in descending order.
